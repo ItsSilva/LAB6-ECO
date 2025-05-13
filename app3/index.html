@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supabase Exercises</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Supabase Exercises</h1>
+
+      <div id="results">
+        <h2>Results</h2>
+        <pre id="result-container">Select an operation from below</pre>
+      </div>
+
+      <div class="exercise-section">
+        <h2>1. Get All Products</h2>
+        <button id="get-all-products">Get All Products</button>
+      </div>
+
+      <div class="exercise-section">
+        <h2>2. Get Products Under Price</h2>
+        <input
+          type="number"
+          id="max-price"
+          value="50"
+          placeholder="Max price"
+        />
+        <button id="get-cheap-products">Get Products Under Price</button>
+      </div>
+
+      <div class="exercise-section">
+        <h2>3. Get User Fields</h2>
+        <button id="get-user-fields">Get Username & Email Fields</button>
+      </div>
+
+      <div class="exercise-section">
+        <h2>4. Get Orders By Date</h2>
+        <button id="get-orders-by-date">Get Orders (Newest First)</button>
+      </div>
+
+      <div class="exercise-section">
+        <h2>5. Get Filtered Products</h2>
+        <input
+          type="number"
+          id="min-price"
+          value="30"
+          placeholder="Min price"
+        />
+        <input
+          type="text"
+          id="category"
+          value="Electronics"
+          placeholder="Category"
+        />
+        <button id="get-filtered-products">Get Filtered Products</button>
+      </div>
+
+      <div class="exercise-section">
+        <h2>6. Search Posts</h2>
+        <input
+          type="text"
+          id="search-term"
+          value="tutorial"
+          placeholder="Search term"
+        />
+        <button id="search-posts">Search Posts</button>
+      </div>
+
+      <div class="exercise-section">
+        <h2>7. Paginated Products</h2>
+        <input type="number" id="limit" value="10" placeholder="Limit" />
+        <input type="number" id="page" value="1" placeholder="Page" />
+        <button id="get-paginated-products">Get Paginated Products</button>
+      </div>
+
+      <div class="exercise-section">
+        <h2>8. Get User Products</h2>
+        <input type="text" id="user-id" placeholder="User ID" />
+        <button id="get-user-products">Get User Products</button>
+      </div>
+
+      <div class="exercise-section">
+        <h2>9. Get All Users</h2>
+        <button id="get-all-users">Get All Users</button>
+      </div>
+    </div>
+
+    <script src="supabase-client.js"></script>
+  </body>
+</html>
